@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>WG</span>developer<span>.</span></a>
+                <ul id="sidemenue">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <i class=" fas fa-times" onclick="closemenue()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenue()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer </p>
+                <h1 class="intro"><span class="info">Software Engineering Student & <br /> Web Developer</span> <br>
+
+                    <pre>
+I am Waqas,
+a 6th semester software engineering student at
+the University of Malakand and a
+passionate web developer. 
+I excel in creating dynamic, responsive web applications 
+and have strong skills in various programming languages and frameworks. 
+I am committed to continuous learning and
+innovation in technology.</pre>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="assets/images/waqas.jpg" alt="">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium architecto beatae
+                        voluptatum. Maxime, earum perferendis pariatur, voluptas sapiente, eos voluptatem molestiae
+                        explicabo culpa ab optio modi! Illo ex mollitia, porro, ea distinctio qui accusantium rem
+                        facilis dolorem eaque consequuntur neque nulla ipsa quia excepturi modi sunt atque magnam ipsam.
+                    </p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">experience</p>
+                        <p class="tab_links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Desiging Web interface</li>
+                            <li> <span>Web Development</span><br>Desiging Web Interface</li>
+                            <li> <span>App Developent</span><br>Desiging Web Interface</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>UI UX design training at et institute</li>
+                            <li> <span>2019 -2021</span><br>Team lead at staraoo llc.</li>
+                            <li> <span>2017 - 2019</span><br>UI UX design executive at coin digital ltd.</li>
+                            <li> <span>2016 - 2017</span><br>Internship at ekart ecommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI UX design training at et institute </li>
+                            <li> <span>2016 Software Engineering from UOM Pakistan</span><br>Desiging web interface</li>
+                            <li> <span>2014</span><br>BBA from UAE </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <din class="services_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam repellendus nam
+                        molestias sequi eveniet velit et at odit similique voluptates voluptas accusantium laudantium
+                        amet repudiandae distinctio quisquam, dolorum porro nobis laboriosam cum, quaerat eligendi. Id
+                        cumque adipisci rem minima voluptas assumenda non! Error illo dolores accusantium cumque
+                        cupiditate repudiandae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam repellendus nam
+                        molestias sequi eveniet velit et at odit similique voluptates voluptas accusantium laudantium
+                        amet repudiandae distinctio quisquam, dolorum porro nobis laboriosam cum, quaerat eligendi. Id
+                        cumque adipisci rem minima voluptas assumenda non! Error illo dolores accusantium cumque
+                        cupiditate repudiandae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam repellendus nam
+                        molestias sequi eveniet velit et at odit similique voluptates voluptas accusantium laudantium
+                        amet repudiandae distinctio quisquam, dolorum porro nobis laboriosam cum, quaerat eligendi. Id
+                        cumque adipisci rem minima voluptas assumenda non! Error illo dolores accusantium cumque
+                        cupiditate repudiandae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </din>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+
+            <div class="work_list">
+                <div class="work">
+                    <img src="assets/images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>the app connects you yo the talented people around the world.
+                            download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="assets/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>music media app</h3>
+                        <p>the app connects you yo the talented people around the world.
+                            download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>online shopping media app</h3>
+                        <p>the app connects you yo the talented people around the world.
+                            download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ......contatc............ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>waqasgul369@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>03488446186</p>
+                    <div class="social_icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form action="" name="submit-to-google-sheet">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" name="Name" placeholder="Enter your Name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="eamil" placeholder="Enter your Email" required>
+                        <label for="Message">Message</label>
+                        <textarea id="Message" name="Message" id="message" rows="6"
+                            placeholder="Type your Message here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; WAQASI AND Engr ALI KHAN. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <!-- script of info......... -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active_link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+
+    </script>
+
+
+    <!-- script of side menue...... -->
+    <script>
+        var sidemenue = document.getElementById("sidemenue");
+
+        function openmenue() {
+            sidemenue.style.right = "0";
+        }
+        function closemenue() {
+            sidemenue.style.right = "-200px";
+        }
+    </script>
+
+    <!-- form script -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyICzX1YEnkuIhxqSU6O3-CFBBvmS2dWZvY3pV3MIQ3_Gu57FXjahJLee9nXeD1PLYo8Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

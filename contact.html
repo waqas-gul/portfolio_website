@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+
+        <!-- header..... -->
+        <div id="contact_header">
+            <div class="container">
+                <nav>
+                    <a href="#" class="logo"><span>WG</span>developer<span>.</span></a>
+                    <ul id="sidemenue">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <i class=" fas fa-times" onclick="closemenue()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenue()"></i>
+                </nav>
+                <div class="about_header_text">
+                    <h1>CONTACT <span> US</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- ......contatc............ -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact_left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>waqasgul369@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone-volume"></i>03488446186</p>
+                        <div class="social_icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="assets/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact_right">
+                        <form action="" name="submit-to-google-sheet">
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name" name="Name" placeholder="Enter your Name" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="eamil" placeholder="Enter your Email" required>
+                            <label for="Message">Message</label>
+                            <textarea id="Message" name="Message" id="message" rows="6"
+                                placeholder="Type your Message here"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- script of side menue...... -->
+            <script>
+                var sidemenue = document.getElementById("sidemenue");
+
+                function openmenue() {
+                    sidemenue.style.right = "0";
+                }
+                function closemenue() {
+                    sidemenue.style.right = "-200px";
+                }
+            </script>
+
+
+            <!-- form script -->
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyICzX1YEnkuIhxqSU6O3-CFBBvmS2dWZvY3pV3MIQ3_Gu57FXjahJLee9nXeD1PLYo8Q/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message send successfully."
+                            setTimeout(function () {
+                                msg.innerHTML = ""
+                            }, 1000)
+                            form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>

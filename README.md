@@ -1,39 +1,49 @@
-# Personal Portfolio Website
+# 🌐  Portfolio Website
 
-This repository contains the source code and files for my personal portfolio website. The website is built using HTML, CSS, and JavaScript.
+[![Website](https://img.shields.io/badge/LIVE_Portfolio-View_Here-%2300A1E1)](https://yourportfolio.com)
+[![HTML5](https://img.shields.io/badge/HTML5-%23E34F26)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-%231572B6)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## Description
+A sleek, single-page portfolio showcasing my skills, projects, and professional journey as a web developer.
 
-The personal portfolio website showcases my skills, projects, and experiences as a web developer. It serves as an online platform to highlight my work and provide information about my background and expertise.
+![Portfolio Screenshot](/portfolio.png)
 
-## Features
+## ✨ Key Sections
 
-- Home: Introduces myself and provides a brief overview of my skills and interests.
-- About: Details my professional background, education, and relevant experience.
-- Projects: Showcases the projects I have worked on, including descriptions, screenshots, and links to live demos or repositories.
-- Skills: Lists the programming languages, frameworks, and tools I am proficient in.
-- Contact: Offers various ways to get in touch with me, such as through email, social media, or a contact form.
+1. **Hero Section**
+   - Professional headshot
+   - Brief introduction tagline
+   - Call-to-action buttons (Contact/Resume)
 
-## Technologies Used
+2. **About Me**
+   - Professional bio (3-4 paragraphs)
+   - Skills matrix with proficiency levels
+   - Education/certification highlights
 
-- HTML: Markup language used for structuring the website.
-- CSS: Stylesheet language used for designing and formatting the website.
-- JavaScript: Programming language used for adding interactivity and dynamic features.
+3. **Projects Showcase**
+   - 3-4 featured projects with:
+     - Project cards with screenshots
+     - Tech stack badges
+     - Live demo/GitHub links
 
-## Getting Started
+4. **Contact Form**
+   - Functional contact form
+   - Social media links
+   - Location/availability info
 
-To view the website locally or make modifications, follow these steps:
+## 🛠 Tech Stack
 
-1. Clone the repository: `git clone [repository URL]`
-2. Open the project folder in your preferred code editor.
-3. Open the `index.html` file in a web browser to view the website.
+| Component | Technology |
+|-----------|------------|
+| **Structure** | Semantic HTML5 |
+| **Styling** | CSS3 (Flexbox/Grid) |
+| **Interactivity** | Vanilla JavaScript |
+| **Animations** | CSS Transitions/Transforms |
+| **Forms** | Formspree/Netlify Forms |
 
-## Contributing
+## 🚀 Quick Start
 
-I appreciate any suggestions, feedback, or contributions to enhance this personal portfolio website. If you would like to contribute, please follow the guidelines in the `CONTRIBUTING.md` file.
-
-## Contact
-
-If you have any questions or inquiries, please feel free to reach out to me through the contact information provided in the website or by using the contact form.
-
-Thank you for visiting my personal portfolio repository! I hope you find it informative and visually appealing.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/waqas-gul/portfolio_website.git
